@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+
+html {
+  font-size: 62.8%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#210537), color-stop(#3e0c61), color-stop(#5e118d), color-stop(#8214bb), to(#a912eb));
+  background-image: linear-gradient(to right, #210537, #3e0c61, #5e118d, #8214bb, #a912eb);
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search_box {
+  position: relative;
+  left: 75%;
+  top: 2rem;
+}
+
+.search_box .input {
+  border: transparent;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search_box .input:invalid {
+  border-bottom: 3px solid #DC143C;
+}
+
+.search_box .btn {
+  padding: 3px;
+  border: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.search_box .btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.country {
+  position: relative;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20rem auto;
+  background-color: #E6E6FA;
+  border-radius: 1rem;
+  width: 50vw;
+  height: 20vh;
+  font-size: 1.5rem;
+}
+
+.country .country_name {
+  display: inline;
+}
+
+.country .country_flag {
+  width: 15%;
+  margin: 0 1rem;
+  display: inline;
+}
+
+.country > .left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.country > .left > ul > li {
+  list-style: none;
+  position: relative;
+  top: 3rem;
+  margin-right: 5rem;
+}
+
+.country > .right {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.country > .right > ul > li {
+  list-style: none;
+  position: relative;
+  top: 3rem;
+}
+
+.country > .right > ul > li:nth-child(1) {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.country > .right > ul > li:nth-child(1)::before, .country > .right > ul > li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  border-radius: 1rem;
+  margin-top: 2.5rem;
+  width: 103%;
+  height: 1rem;
+}
+
+.country > .right > ul > li:nth-child(1):before {
+  top: 0;
+  left: 0;
+  background: #eee;
+}
+
+.country > .right > ul > li:nth-child(1):after {
+  background-color: #DC143C;
+  background: repeating-linear-gradient(-45deg, #DC143C, #DC143C 10px, #ea1640 10px, #ea1640 20px);
+  padding: 3px;
+  width: 100%;
+  height: .6rem;
+  top: 2px;
+  left: 2px;
+  -webkit-animation: fill;
+          animation: fill;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.country > .right > ul > li:nth-child(2) {
+  position: relative;
+}
+
+.country > .right > ul > li:nth-child(2)::before, .country > .right > ul > li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  border-radius: 1rem;
+  margin-top: 2.5rem;
+  width: 103%;
+  height: 1rem;
+}
+
+.country > .right > ul > li:nth-child(2):before {
+  top: 0;
+  left: 0;
+  background: #eee;
+}
+
+.country > .right > ul > li:nth-child(2):after {
+  background-color: #DC143C;
+  background: repeating-linear-gradient(-45deg, #DC143C, #DC143C 10px, #ea1640 10px, #ea1640 20px);
+  padding: 3px;
+  width: 100%;
+  height: .6rem;
+  top: 2px;
+  left: 2px;
+  -webkit-animation: fill;
+          animation: fill;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fill {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    width: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
