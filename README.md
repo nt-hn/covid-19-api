@@ -2,6 +2,8 @@
 
 covid-19-api is a project for getting the information of the number of covid related deaths, vaccinated people against the covid 19 and the number of infected people so far.
 
+>Hopefully with vaccinations spreading the situations get better!
+
 ## Installation
 
 Make sure all the files are in the same directory and you are connected to the internet.
