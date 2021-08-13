@@ -15,6 +15,7 @@ html {
 
 body {
   background-image: -webkit-gradient(linear, left top, right top, from(#210537), color-stop(#3e0c61), color-stop(#5e118d), color-stop(#8214bb), to(#a912eb));
+  background-image: -o-linear-gradient(left, #210537, #3e0c61, #5e118d, #8214bb, #a912eb);
   background-image: linear-gradient(to right, #210537, #3e0c61, #5e118d, #8214bb, #a912eb);
   width: 100vw;
   overflow-x: hidden;
@@ -46,7 +47,8 @@ body {
 
 .search_box .btn:active {
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+          -ms-transform: scale(0.9);
+      transform: scale(0.9);
 }
 
 .country {
@@ -120,6 +122,7 @@ body {
 
 .country > .right > ul > li:nth-child(1):after {
   background-color: #DC143C;
+  background: -o-repeating-linear-gradient(135deg, #DC143C, #DC143C 10px, #ea1640 10px, #ea1640 20px);
   background: repeating-linear-gradient(-45deg, #DC143C, #DC143C 10px, #ea1640 10px, #ea1640 20px);
   padding: 3px;
   width: 100%;
@@ -153,6 +156,7 @@ body {
 
 .country > .right > ul > li:nth-child(2):after {
   background-color: #DC143C;
+  background: -o-repeating-linear-gradient(135deg, #DC143C, #DC143C 10px, #ea1640 10px, #ea1640 20px);
   background: repeating-linear-gradient(-45deg, #DC143C, #DC143C 10px, #ea1640 10px, #ea1640 20px);
   padding: 3px;
   width: 100%;
@@ -176,4 +180,3 @@ body {
     width: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
