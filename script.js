@@ -38,7 +38,7 @@ function searched(){
 
                 const getting = await fetch(link + data.All.country);
                 const file = await getting.json();
-                let totalVaccinated = Number(file.All.people_vaccinated) + Number(file.All.people_partially_vaccinated)
+                let totalVaccinated = Number(file.All.people_partially_vaccinated)
                 vaccinated.innerText = 'Vaccinated: ' + totalVaccinated;
 
             }
