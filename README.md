@@ -4,6 +4,16 @@ covid-19-api is a project for getting the current information of the number of c
 
 >Hopefully with vaccinations spreading the situations get better!
 
+### Sourse of the information 
+
+For the vaccination:
+
+https://covid-api.mmediagroup.fr/v1/vaccines?country
+
+For the population, covid cases and death:
+
+https://covid-api.mmediagroup.fr/v1/cases?country
+
 ## Installation
 
 Make sure all the files are in the same directory and you are connected to the internet.
