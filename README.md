@@ -6,6 +6,8 @@ covid-19-api is a project for getting the current information of the number of c
 
 ### Sourse of the information 
 
+The information was obtained from json files on the following websites
+
 For the vaccination:
 
 https://covid-api.mmediagroup.fr/v1/vaccines?country
