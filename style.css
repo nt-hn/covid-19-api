@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
 html {
   font-size: 62.8%;
 }
@@ -13,17 +13,27 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#210537), color-stop(#3e0c61), color-stop(#5e118d), color-stop(#8214bb), to(#a912eb));
-  background-image: linear-gradient(to right, #210537, #3e0c61, #5e118d, #8214bb, #a912eb);
-  width: 100vw;
-  overflow-x: hidden;
+  background-color: #a912eb;
+  overflow: hidden;
   font-family: 'Roboto', sans-serif;
 }
 
 .search_box {
   position: relative;
-  left: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   top: 2rem;
+  left: 2%;
 }
 
 .search_box .input {
@@ -54,13 +64,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20rem auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10vh auto;
   background-color: #E6E6FA;
   border-radius: 1rem;
-  width: 50vw;
-  height: 20vh;
-  font-size: 1.5rem;
-  overflow: hidden;
+  width: 80vw;
+  height: 80vh;
+  font-size: 2rem;
+  overflow: auto;
 }
 
 .country .country_name {
@@ -73,23 +90,11 @@ body {
   display: inline;
 }
 
-.country > .left {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .country > .left > ul > li {
   list-style: none;
   position: relative;
   top: 3rem;
   margin-right: 5rem;
-}
-
-.country > .right {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .country > .right > ul > li {
@@ -174,6 +179,12 @@ body {
 @keyframes fill {
   from {
     width: 0;
+  }
+}
+
+@media only screen and (min-width: 20em) {
+  html {
+    font-size: 45%;
   }
 }
 /*# sourceMappingURL=style.css.map */
